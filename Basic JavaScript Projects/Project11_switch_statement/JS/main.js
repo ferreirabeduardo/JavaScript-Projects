@@ -27,3 +27,8 @@ function color_function() {
         document.getElementById("output").innerHTML = color_output;
 
     }
+
+function Hello_World_Function() {
+var A = document.getElementsByClassName("Click");
+A[0].innerHTML = "The text has changed!";
+}

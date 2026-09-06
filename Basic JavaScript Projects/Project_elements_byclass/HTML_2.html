@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="CSS/CSS_1.css">
+    <script src="JavaScript_2.js" defer></script>
+  </head>
+
+  <body>
+
+    <h2>Contact Us</h2>
+
+    <form name="contactForm" onsubmit="return validate_form()">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <p id="error"></p>
+
+  </body>
+</html>
