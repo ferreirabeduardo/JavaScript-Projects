@@ -25,6 +25,12 @@ padding: 0px;
 width: 200px;
 height: 200px;
 filter: contrast(3);
+/*This makes the x and o images smaller instead of filling the whole square.*/
+background-size: 120px 120px;
+/*This centers the image in the square.*/
+background-position: center;
+/*This stops the image from repeating.*/
+background-repeat: no-repeat;
 }
 
 canvas {
