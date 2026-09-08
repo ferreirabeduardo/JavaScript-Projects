@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>React 1</title>
+    <!-- link to the react library files -->
+    <script src="react.js"></script>
+    <script src="react-dom.js"></script>
+  </head>
+  <body>
+
+    <div id="My_React_Code"></div>
+
+    <script>
+      //create the component class
+      var Counter = React.createClass({
+        render: function () {
+          //work out how many seconds have passed
+          var seconds_Passed = Math.round(this.props.time_Passed / 100);
+          //if more than 10 show the seconds, otherwise just count up
+          var text = seconds_Passed > 10 ?
+            seconds_Passed + ' seconds ago!' :
+            seconds_Passed + ' .0';
+          return React.DOM.p(null, text);
+        }
+      });
+
+      //create a factory from the Counter component
+      var counter_Factory = React.createFactory(Counter);
+
+      //store the start time
+      var start_Counting = new Date().getTime();
+
+      //update the component every 50 milliseconds
+      setInterval(function () {
+        ReactDOM.render(
+          counter_Factory({ time_Passed: new Date().getTime() - start_Counting }),
+          document.getElementById('My_React_Code')
+        );
+      }, 50);
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>React 2</title>
+    <!-- link to the react libraries via URL -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  </head>
+  <body>
+
+    <!-- the place where our button will show -->
+    <div id="like_button_container"></div>
+
+    <script>
+      const X = React.createElement;
+
+      //a Like button component
+      class LikeButton extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { liked: false };
+        }
+        render() {
+          //once clicked, show the message instead of the button
+          if (this.state.liked) {
+            return 'You clicked the like button!';
+          }
+          //otherwise show the button
+          return X(
+            'button',
+            { onClick: () => this.setState({ liked: true }) },
+            'Like'
+          );
+        }
+      }
+
+      //find the div and render the button into it
+      const domContainer = document.querySelector('#like_button_container');
+      ReactDOM.render(X(LikeButton), domContainer);
+    </script>
+
+  </body>
+</html>
