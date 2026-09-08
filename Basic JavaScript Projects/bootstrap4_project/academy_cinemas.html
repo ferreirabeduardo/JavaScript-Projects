@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+
+
+    
+    <title>Academy Cinemas</title>
+  </head>
+  <body>
+    
+      <div class="container">
+        
+        
+  <!-- NAV BAR -->
+
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-info">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="#about">About</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="#showtimes">Showtimes</a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link text-light" href="#">Deals</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    <!-- HEADER -->
+
+<div class="jumbotron jumbotron-fluid bg-info">
+  <div class="container">
+    <h1 class="display-4 text-light text-center">Academy Cinemas</h1>
+    <p class="lead text-light text-center">Sit back, relax and enjoy the movies!</p>
+  </div>
+</div>
+
+    <!-- NEW COMPONENT: Bootstrap dismissible alert -->
+    <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+      <strong>Now booking!</strong> Special late night premiere this Friday, grab your seats early.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!-- TABLE -->
+
+<div id="about" class="container">
+  <div class="row">
+    <div class="col-sm">
+
+        <img class="img-fluid" src="pdx.jpg" alt="" />
+
+    <!-- ACCOMMODATIONS -->
+
+    </div>
+    <div class="col-sm">
+
+        <h3>Accommodations: </h3>
+        <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</p>
+        <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</p>
+        <p>All of our auditoriums are equipped with brand new Christie 3D8reg; sound systems!</p>
+        <p>Relax in our, extra-wide, plush cushioning recliners. Our seating arrangement is disability friendly &#9855;</p>
+
+    </div>
+
+        <!--  NOW PLAYING -->
+
+    <div class="col-sm">
+        <h3>Now Playing: </h3>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a class="nav-link" href="">Kong: Skull Island</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="">Ghost in the Shell</a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="">Beauty and the Beast</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+        <!-- SHOWTIMES -->
+  <div id="showtimes" class="my-5">
+    <h2 class="text-center text-primary">Showtimes</h2>
+    
+    <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="kongskullisland.jpg" alt="Card image cap1 "
+            style="height: 220px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Kong: Skull Island</h5>
+      <p class="card-text">Skull Island is a 2017 action-adventure monster film about a team of scientists, soldiers, and explorers who travel to an uncharted Pacific island.</p>
+<span class="badge badge-pill badge-primary mt-auto align-self-start">Classification: 15</span>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="ghostintheshell.jpg" alt="Card image cap 2"
+            style="height: 220px; object-fit: cover;">
+ <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Ghost in the Shell</h5>
+      <p class="card-text">Ghost in the Shell is a 2015 science fiction action film based on the Japanese manga series of the same name by Masamune Shirow.</p>
+<span class="badge badge-pill badge-warning mt-auto align-self-start">Classification: 12A</span>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="beautyandthebeast.jpg" alt="Card image cap 3"
+            style="height: 220px; object-fit: cover;">
+ <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Beauty and the Beast</h5>
+      <p class="card-text">Beauty and the Beast is a 2017 American musical romantic fantasy film produced by Walt Disney Pictures.</p>
+<span class="badge badge-pill badge-success mt-auto align-self-start">Classification: PG</span>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+    <!-- NEWSLETTER -->
+
+
+  <div class="text-center"> 
+
+
+        <form>
+          <h1 class="text-primary my-5">Sign up for our newsletter!</h1>
+        <div class="form-group text-center">
+          <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control w-25 mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+  </div>
+    <!-- FOOTER -->
+
+  
+  <div class="containers my-5">
+      <ul class="nav nav-inline">
+          <li class="nav-item">
+              <small><a class="nav-link active" href="" >Movie Rewards</a></small>
+          </li>
+          <li class="nav-item">
+              <small><a class="nav-link active" href="" >movie@news.org  </a></small>  
+        </li>
+          <li class="nav-item">
+              <small><a class="nav-link active" href="" >info@academy.cinemas.com</a></small>
+          </li>
+        <li class="nav-item">
+              <small><a class="nav-link">&copy; 2019 Academy Cinemas </a></small>
+          </li>
+
+
+        </li> 
+
+      </ul>
+
+
+  </div>
+
+
+
+
+
+
+   </div>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
