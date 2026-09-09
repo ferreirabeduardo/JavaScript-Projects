@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #0f1b2a;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  background-color: #0073bb;
+}
+
+.profile {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0073bb;
+}
+
+.profile-name {
+  margin: 6px 0 0;
+  font-weight: bold;
+  color: #0f1b2a;
+}
+
+#home {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #eef1f5;
+}
+
+#slideshow {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #cccccc;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
+}
+
+.slide.show {
+  display: block;
+  animation: fade 1s;
+}
+
+.slide .text {
+  color: white;
+  background-color: #0f1b2a;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#about, #github {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+a {
+  color: #0073bb;
+}
+
+.open-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0073bb;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  width: 260px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.btn {
+  background-color: #0073bb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.cancel {
+  background-color: #cccccc;
+  color: black;
+}
+
+#formError {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f1b2a;
+  color: white;
+}

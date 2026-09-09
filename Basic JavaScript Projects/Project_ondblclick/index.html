@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Double Click Event</title>
+</head>
+<body>
+
+<p id="example" ondblclick="myFunction()">Double click this paragraph to see what happens.</p>
+
+<script>
+  //this runs when the paragraph is double clicked
+  function myFunction() {
+    var p = document.getElementById("example");
+    p.innerHTML = "Nice, you double clicked me!";
+    p.style.color = "white";
+    p.style.backgroundColor = "green";
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eduardo Ferreira - Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpg">
+    <link rel="stylesheet" href="stylesheet/portfolio.css">
+  </head>
+
+  <body>
+
+    <!-- nav bar -->
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#slideshow">Projects</a>
+      <a href="#about">About</a>
+      <a href="#github">Links</a>
+      <a class="contact-link" onclick="openForm()">Contact</a>
+    </div>
+
+    <!-- profile picture top right -->
+    <div class="profile">
+      <img src="images/photo1.jpg" alt="Photo of Eduardo" class="profile-pic">
+      <p class="profile-name">Eduardo Ferreira</p>
+    </div>
+
+    <!-- home section -->
+    <div id="home">
+      <h1>Eduardo Ferreira's Portfolio</h1>
+      <p>Welcome to my portfolio. Here you can learn a little about my background and my work.</p>
+    </div>
+
+    <!-- projects slideshow section -->
+    <div id="slideshow">
+      <h1>My Projects</h1>
+      <div class="slide fade">
+        <img src="images/project1.png" alt="Project 1">
+        <div class="text">Shift Planner - a web app that helps teams manage shift schedules, coverage and time off across multiple regions.</div>
+      </div>
+      <div class="slide fade">
+        <img src="images/project2.png" alt="Project 2">
+        <div class="text">Conference Bridges - a web page that shows live conference bridges so teams can see and join the right calls quickly.</div>
+      </div>
+      <div class="slide fade">
+        <img src="images/project3.png" alt="Project 3">
+        <div class="text">Weather Dashboard - a web page that displays weather information and alerts to support operational decisions.</div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+      <h1>About</h1>
+      <p>
+        I work as a Facility Operations Center Engineer, supporting monitoring, incident response and operational continuity for critical data centre infrastructure.
+        <br><br>
+        Alongside my operational role, I build web applications, dashboards and automation tools using JavaScript, Python, React and AWS services.
+        <br><br>
+        I recently completed a JavaScript course where I built projects covering the DOM, events, JSON, localStorage, AJAX, jQuery and React.
+      </p>
+    </div>
+
+    <!-- links section -->
+    <div id="github">
+      <h1>Links</h1>
+      <p>You can find my work and profile here:</p>
+      <p><a href="https://github.com/ferreirabeduardo" target="_blank">My GitHub</a></p>
+      <p><a href="https://www.linkedin.com/in/eduardobferreira/" target="_blank">My LinkedIn</a></p>
+    </div>
+
+    <!-- contact form popup -->
+    <div id="contact">
+      <button onclick="openForm()" class="open-button">Contact</button>
+      <div class="form-popup" id="myForm">
+        <form onsubmit="return validateForm()" class="form-container">
+          <h1>Contact</h1>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Your email">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Your message"></textarea>
+          <p id="formError"></p>
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <p>Made by Eduardo Ferreira | 2026</p>
+    </footer>
+
+    <script src="JS/portfolio.js"></script>
+  </body>
+</html>

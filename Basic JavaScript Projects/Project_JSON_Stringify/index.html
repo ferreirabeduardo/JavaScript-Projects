@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JSON stringify</title>
+</head>
+<body>
+
+<p id="myDog"></p>
+<p id="myDog2"></p>
+
+<script>
+  //javascript object with key value pairs
+  var dog = {
+    name: "Dax",
+    breed: "Great Pyrenees",
+    color: "White"
+  };
+
+  //convert the object into a JSON string
+  var JSONstring = JSON.stringify(dog);
+
+  //show the string on the page
+  document.getElementById("myDog").innerHTML = JSONstring;
+
+  //this is a JSON string
+  var dogString = '{"name": "Dax", "breed": "Great Pyrenees", "color": "White"}';
+
+  //convert the JSON string back into a javascript object
+  var dogObject = JSON.parse(dogString);
+
+  //show a couple of values from the object
+  document.getElementById("myDog2").innerHTML = dogObject.name + " the " + dogObject.breed;
+</script>
+
+</body>
+</html>
